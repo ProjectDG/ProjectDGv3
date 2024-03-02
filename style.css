@@ -85,15 +85,15 @@ li{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    margin: auto;
+    width: 99%;
+    margin: 5% auto;
 }
 
 .all-buttons{
     margin: 1vh;
     height: 10vh;
-    width: 30vw;
-    padding: 0% 10%;
+    width: 25vw;
+    padding: 0% 3%;
     font-size: 2vh;
     border-radius: 8%;
     border: 1px inset rgb(14, 14, 14);
@@ -114,6 +114,7 @@ li{
 }
 
 #backButton{
+    display: none;
     border-radius: 5%;
     width: 90%;
     height: 5vh;

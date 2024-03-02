@@ -43,7 +43,9 @@ fetch('data.json')
     //-------------------------------------------------------------------------------------------------------------------||
     $(".all-buttons").click(function(){
         $("#photoDiv").empty();
-        $("#btnDiv").empty();
+        $("#btnDiv").hide();
+        $("#backButton").show();
+        
         data.map(x => {
 
             if(x.name === this.value){
@@ -113,7 +115,27 @@ fetch('data.json')
             
         })
     });
+
+    // back button click function
+    //-------------------------------------------------------------------------------------------------------------------||
+    $("#backButton").click(function(){
+      $("#backButton").hide();
+      $("#photoDiv").hide();
+      $("#recipeText").empty();
+      $("#recipeLabels").empty();
+      $("#recipeDiv").css("display", "none");
+      $("#btnDiv").show();
+      title.innerText = "Drink Recipes"
+      
+    });
+
+
+
   })
+
+  
+
+
   .catch(error => {
     console.error('There was a problem fetching the data:', error);
   });
