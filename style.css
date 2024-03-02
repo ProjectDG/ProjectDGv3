@@ -1,0 +1,120 @@
+body{
+    background-image: url("./images/newWoodBackground2.jpg");
+    background-size: 105% 120%;
+    display: block;
+    height: 97vh;
+}
+
+/* Header Div -----------------------------------------------------------------*/
+#header{
+    font-size: 1.5vh;
+    color: antiquewhite;
+    text-align: center;
+    border: 2px inset rgb(122, 113, 113);
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
+    padding: 2%;
+}
+
+h1{
+    margin: 0%;
+}
+
+
+/* Photo Div -----------------------------------------------------------------*/
+#photoDiv{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 70%;
+    padding: 3%;
+    overflow: hidden;
+}
+
+img{
+    border: 2px outset rgb(122, 113, 113);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
+    max-width: 70%;
+    z-index: 2;
+}
+
+
+/* Recipe Div -----------------------------------------------------------------*/
+#recipeDiv{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: 2px inset rgb(122, 113, 113);
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5%;
+    height: 40vh;
+    color: antiquewhite;
+}
+
+li{
+    font-size: 2.2vh;
+    list-style: none;
+    padding: 1vh;
+}
+
+#recipeLabels{
+    padding-left: 2vw;
+    width: fit-content;
+    font-weight: bold;
+}
+
+#recipeText{
+    width: fit-content;
+    padding-left: 0%;
+}
+
+.additionalIngredientsBlank{
+    list-style: none;
+    padding: 1em 0%;
+}
+
+.additionalIngredients{
+    list-style: none;
+}
+
+
+/* Button Div -----------------------------------------------------------------*/
+#btnDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+.all-buttons{
+    margin: 1vh;
+    height: 10vh;
+    width: 30vw;
+    padding: 0% 10%;
+    font-size: 2vh;
+    border-radius: 8%;
+    border: 1px inset rgb(14, 14, 14);
+    box-shadow: 1px 1px 5px rgb(88, 88, 88), 0 0 5px rgb(88, 88, 88), 0 0 5px rgb(88, 88, 88);
+    color: antiquewhite;
+    background-color: rgb(39, 39, 39);
+    cursor: pointer;
+}
+
+/* Back Button Div -----------------------------------------------------------------*/
+#backButtonDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+#backButton{
+    border-radius: 5%;
+    width: 90%;
+    height: 5vh;
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Cadillac",
+    "glass": "Margarita Glass",
+    "rim": "Guest Choice",
+    "liquor": ["1800 Anejo - 2 oz"],
+    "liqueur": ["Grand Marnier - 1 oz"],
+    "mixers": ["Sour Mix - 2 oz"],
+    "garnish": ["Lime Wedge"],
+    "photo": "./images/cadillac.png"
+  },
+  {
+    "name": "Tanteo Jalapeno",
+    "glass": "Margarita Glass",
+    "rim": "Tajin Chile Lime Salt",
+    "liquor": ["Tanteo Jalapeno - 2 oz"],
+    "liqueur": ["Triple Sec - 1 oz"],
+    "mixers": ["Sour Mix - 2 oz"],
+    "garnish": ["Lime Wedge"],
+    "photo": "./images/jalapeno.png"
+  },
+  {
+    "name": "Two Tango",
+    "glass": "Rocks Glass",
+    "rim": "Jalapeno Salt",
+    "liquor": [
+      "Dos Hombres Mezcal - 1 oz,",
+      "El Jimador Blanco - 1 oz"
+    ],
+    "liqueur": null,
+    "mixers": ["Rocco's Lime Mix - 2 oz"],
+    "garnish": ["Dehydrated Lime Wheel"],
+    "photo": "./images/twoTango.png"
+  }
+]
