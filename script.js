@@ -29,14 +29,14 @@ fetch('data.json')
         // accesses button div
         let btnDiv = document.getElementById("btnDiv");
 
-        // creates buttons
-        let createBtn = document.createElement('button');
-        createBtn.setAttribute("class", "all-buttons");
-        createBtn.setAttribute("value", x.name);
-        createBtn.innerHTML = x.name;
+        // creates recipe buttons
+        let recipeButtons = document.createElement('button');
+        recipeButtons.setAttribute("class", "all-buttons");
+        recipeButtons.setAttribute("value", x.name);
+        recipeButtons.innerHTML = x.name;
 
         // appends buttons to button div
-        btnDiv.appendChild(createBtn);
+        btnDiv.appendChild(recipeButtons);
     })
 
     // button click function
@@ -54,6 +54,9 @@ fetch('data.json')
                 $("#recipeLabels").empty();
                 $("#recipeDiv").css("display", "flex")
                 $("#photoDiv").show();
+
+                // Recipe Labels 
+                //----------------------------------------------------------------||
                 let image = document.createElement("img");
                 let glassLabel = document.createElement("li");
                 let rimLabel = document.createElement("li");
@@ -63,6 +66,8 @@ fetch('data.json')
                 let mixersLabel = document.createElement("li");
                 let garnishLabel = document.createElement("li");
 
+                // Recipes 
+                //----------------------------------------------------------------||
                 let glass = document.createElement("li");
                 let rim = document.createElement("li");
                 let liquor = document.createElement("li");
@@ -71,7 +76,8 @@ fetch('data.json')
                 let mixers = document.createElement("li");
                 let garnish = document.createElement("li");
 
-
+                // assigns recipes to labels
+                //----------------------------------------------------------------||
                 title.innerHTML = x.name;
                 glassLabel.innerHTML = "Glass: ";
                 glass.innerHTML = x.glass;
@@ -89,6 +95,7 @@ fetch('data.json')
                 image.setAttribute("src", x.photo);
 
 
+                // assembles recipes in html
                 photoDiv.append(image);
                 recipeLabels.append(glassLabel);
                 recipeText.append(glass);
@@ -125,8 +132,7 @@ fetch('data.json')
       $("#recipeLabels").empty();
       $("#recipeDiv").css("display", "none");
       $("#btnDiv").show();
-      title.innerText = "Drink Recipes"
-      
+      title.innerText = "Rocco's Drink Recipes"
     });
 
 
