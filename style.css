@@ -93,6 +93,7 @@ li{
 }
 
 .all-buttons{
+    display: none;
     margin: 1vh;
     height: 10vh;
     width: 25vw;
@@ -104,6 +105,12 @@ li{
     color: antiquewhite;
     background-color: rgb(0, 0, 0);
     cursor: pointer;
+}
+
+.drink-section-buttons{
+    height: 14vh;
+    width: 40vw;
+    padding: 0% 10%;
 }
 
 /* Back Button Div -----------------------------------------------------------------*/

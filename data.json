@@ -1,5 +1,10 @@
 [
   {
+    "name": "Margaritas",
+    "type": "menuDrinks",
+    "class": "Navigation Button"
+  },
+  {
     "name": "Cadillac",
     "glass": "Margarita Glass",
     "rim": "Guest Choice",
@@ -7,7 +12,9 @@
     "liqueur": ["Grand Marnier - 1 oz"],
     "mixers": ["Sour Mix - 2 oz"],
     "garnish": ["Lime Wedge"],
-    "photo": "./images/cadillac.png"
+    "photo": "./images/cadillac.png",
+    "type": "Margarita",
+    "class": "Recipe Button"
   },
   {
     "name": "Tanteo Jalapeno",
@@ -17,19 +24,91 @@
     "liqueur": ["Triple Sec - 1 oz"],
     "mixers": ["Sour Mix - 2 oz"],
     "garnish": ["Lime Wedge"],
-    "photo": "./images/jalapeno.png"
+    "photo": "./images/jalapeno.png",
+    "type": "Margarita",
+    "class": "Recipe Button"
   },
   {
     "name": "Two Tango",
     "glass": "Rocks Glass",
     "rim": "Jalapeno Salt",
-    "liquor": [
+    "liquor": 
+    [
       "Dos Hombres Mezcal - 1 oz,",
       "El Jimador Blanco - 1 oz"
     ],
     "liqueur": null,
     "mixers": ["Rocco's Lime Mix - 2 oz"],
     "garnish": ["Dehydrated Lime Wheel"],
-    "photo": "./images/twoTango.png"
+    "photo": "./images/twoTango.png",
+    "type": "Margarita",
+    "class": "Recipe Button"
+  },
+
+
+
+  {
+    "name": "Specialty Drinks",
+    "type": "menuDrinks",
+    "class": "Navigation Button"
+  },
+  
+
+
+  {
+    "name": "Happy Hour",
+    "type": "menuDrinks",
+    "class": "Navigation Button"
+  },
+
+
+
+  {
+    "name": "Mocktails",
+    "type": "menuDrinks",
+    "class": "Navigation Button"
+  },
+
+
+  {
+    "name": "Frozen Drinks",
+    "type": "menuDrinks",
+    "class": "Navigation Button"
+  },
+
+
+  {
+    "name": "Sangria",
+    "type": "menuDrinks",
+    "class": "Navigation Button"
+  },
+
+
+  {
+    "name": "Specials",
+    "type": "menuDrinks",
+    "class": "Navigation Button"
+  },
+
+
+  {
+    "name": "Brunch",
+    "type": "menuDrinks",
+    "class": "Navigation Button"
+  },
+
+
+  {
+    "name": "Batch Recipes",
+    "type": "menuDrinks",
+    "class": "Navigation Button"
+  },
+
+
+  {
+    "name": "Other Drinks",
+    "type": "menuDrinks",
+    "class": "Navigation Button"
   }
+
 ]
