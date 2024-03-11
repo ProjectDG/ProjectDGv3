@@ -76,11 +76,12 @@ li{
 
 .additionalIngredientsBlank{
     list-style: none;
-    padding: 1.0765em 0%;
+    padding: .9519em 0%;
 }
 
 .additionalIngredients{
     list-style: none;
+    padding: 0 1vh 1.5vh 1vh;
 }
 
 

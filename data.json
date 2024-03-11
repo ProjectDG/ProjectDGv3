@@ -36,7 +36,23 @@
     "name": "House Margarita",
     "glass": "Margarita Glass",
     "rim": "Guest Choice",
-    "liquor": ["Jose Cuervo<br> Tradicional Silver - 2 oz"],
+    "liquor": 
+    [
+      "Jose Cuervo:",
+      "Tradicional Silver - 2 oz"
+    ],
+    "liqueur": ["Triple Sec - 1 oz"],
+    "mixers": ["Sour Mix - 3 oz"],
+    "garnish": ["Lime Wedge"],
+    "photo": "./images/houseMargarita.png",
+    "type": "Margarita",
+    "class": "Recipe Button"
+  },
+  {
+    "name": "Rocco Mango",
+    "glass": "Highball Glass",
+    "rim": "Hibiscus Salt",
+    "liquor": ["Rocco Mango Batch Mix - 3 oz"],
     "liqueur": ["Triple Sec - 1 oz"],
     "mixers": ["Sour Mix - 3 oz"],
     "garnish": ["Lime Wedge"],
