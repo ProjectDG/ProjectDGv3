@@ -14,6 +14,7 @@ body{
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
     padding: 2%;
+    margin: 4% 0 3% 0;
 }
 
 h1{
@@ -49,14 +50,15 @@ img{
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
     border-radius: 5%;
-    height: 35vh;
-    margin-bottom: 1vh;
+    width: 95%;
+    max-height: 43vh;
+    margin: auto;
     color: antiquewhite;
     overflow: scroll;
 }
 
 li{
-    font-size: 2.2vh;
+    font-size: 2vh;
     list-style: none;
     padding: 1vh;
 }
@@ -74,7 +76,7 @@ li{
 
 .additionalIngredientsBlank{
     list-style: none;
-    padding: 1em 0%;
+    padding: 1.0765em 0%;
 }
 
 .additionalIngredients{
@@ -88,8 +90,8 @@ li{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 99%;
-    margin: 5% auto;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .all-buttons{
@@ -119,13 +121,15 @@ li{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 6%;
     width: 90%;
-    margin: auto;
+    margin: 2% 3%;
 }
 
 #backButton{
     display: none;
     border-radius: 2%;
     width: 90%;
-    height: 5vh;
+    height: 6vh;
 }

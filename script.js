@@ -1,3 +1,8 @@
+// if (typeof process !== 'undefined' && process.versions != null && process.versions.node != null) {
+//   console.log('Running in Node.js environment');
+// } else {
+//   console.log('Not running in Node.js environment');
+// }
 
 $(document).ready(function(){
 
@@ -15,7 +20,7 @@ fetch('data.json')
     // Use the parsed JSON data
 
     // access to divs
-    //-------------------------------------------------------------------------------------------------------------------||
+    //--------------------------------------------------------------------------------------------------------------------||
      const photoDiv = document.getElementById("photoDiv");
      const recipeLabels = document.getElementById("recipeLabels");
      const recipeText = document.getElementById("recipeText");
@@ -90,6 +95,7 @@ fetch('data.json')
             $("#backButton").hide();
 
 
+
             if(x.name === this.value){
               $("#recipeText").empty();
               $("#recipeLabels").empty();
@@ -99,13 +105,30 @@ fetch('data.json')
               // Recipe Labels 
               //----------------------------------------------------------------||
               let image = document.createElement("img");
+
               let glassLabel = document.createElement("li");
+              glassLabel.setAttribute("class", "labels");
+
               let rimLabel = document.createElement("li");
+              rimLabel.setAttribute("class", "labels");
+
               let liquorLabel = document.createElement("li");
+              liquorLabel.setAttribute("class", "labels");
+
               let liquorLabel2 = document.createElement("li");
+              liquorLabel2.setAttribute("class", "labels");
+
               let liqueurLabel = document.createElement("li");
+              liqueurLabel.setAttribute("class", "labels");
+
               let mixersLabel = document.createElement("li");
+              mixersLabel.setAttribute("class", "labels");
+
+              let mixersLabel2 = document.createElement("li");
+              mixersLabel2.setAttribute("class", "labels");
+
               let garnishLabel = document.createElement("li");
+              garnishLabel.setAttribute("class", "labels");
 
               // Recipes 
               //----------------------------------------------------------------||
@@ -115,6 +138,7 @@ fetch('data.json')
               let liquor2 = document.createElement("li");
               let liqueur = document.createElement("li");
               let mixers = document.createElement("li");
+              let mixers2 = document.createElement("li");
               let garnish = document.createElement("li");
 
               // assigns recipes to labels
@@ -130,13 +154,19 @@ fetch('data.json')
               liqueurLabel.innerHTML = "Liqueur: ";
               liqueur.innerHTML = x.liqueur;
               mixersLabel.innerHTML = "Mixers: ";
-              mixers.innerHTML = x.mixers;
+              mixers.innerHTML = x.mixers[0];
+              mixers2.innerHTML = x.mixers[1];
               garnishLabel.innerHTML = "Garnish: ";
               garnish.innerHTML = x.garnish;
               image.setAttribute("src", x.photo);
 
 
               // assembles recipes in html
+              //----------------------------------------------------------------||
+
+              // if(x.name === "House Margarita"){
+              //   $(".labels").css("margin", "20vh")
+              // }
               photoDiv.append(image);
               recipeLabels.append(glassLabel);
               recipeText.append(glass);
@@ -153,13 +183,20 @@ fetch('data.json')
               if(x.liqueur !== null){
                   recipeLabels.append(liqueurLabel);
                   recipeText.append(liqueur)
-              }
+              };
+              
               
               recipeLabels.append(mixersLabel);
               recipeText.append(mixers);
+              if(x.mixers[1] !== undefined){
+                mixersLabel2.setAttribute("class", "additionalIngredientsBlank")
+                recipeLabels.append(mixersLabel2)
+                mixers2.setAttribute("class", "additionalIngredients")
+                recipeText.append(mixers2);
+              };
               recipeLabels.append(garnishLabel);
               recipeText.append(garnish);
-          }
+            }
 
 
           }

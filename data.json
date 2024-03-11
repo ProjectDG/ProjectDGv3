@@ -5,6 +5,22 @@
     "class": "Navigation Button"
   },
   {
+    "name": "Black Diamond",
+    "glass": "Rocks Glass",
+    "rim": "Black Sea Salt",
+    "liquor": ["Santo Blanco - 2 oz"],
+    "liqueur": null,
+    "mixers": 
+    [
+      "Real Black Cherry Syrup - 1 oz",
+      "Rocco's Lime Mix - 2 oz"
+    ],
+    "garnish": ["Dehydrated Lime Wheel"],
+    "photo": "./images/blackDiamond.png",
+    "type": "Margarita",
+    "class": "Recipe Button"
+  },
+  {
     "name": "Cadillac",
     "glass": "Margarita Glass",
     "rim": "Guest Choice",
@@ -13,6 +29,18 @@
     "mixers": ["Sour Mix - 2 oz"],
     "garnish": ["Lime Wedge"],
     "photo": "./images/cadillac.png",
+    "type": "Margarita",
+    "class": "Recipe Button"
+  },
+  {
+    "name": "House Margarita",
+    "glass": "Margarita Glass",
+    "rim": "Guest Choice",
+    "liquor": ["Jose Cuervo<br> Tradicional Silver - 2 oz"],
+    "liqueur": ["Triple Sec - 1 oz"],
+    "mixers": ["Sour Mix - 3 oz"],
+    "garnish": ["Lime Wedge"],
+    "photo": "./images/houseMargarita.png",
     "type": "Margarita",
     "class": "Recipe Button"
   },
