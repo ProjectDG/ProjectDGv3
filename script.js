@@ -77,11 +77,13 @@ fetch('data.json')
             $("#backButton").show();
             
             if(this.value === "Margaritas"){
+              title.innerHTML = this.value;
               $('[name="Margarita"]').show();
               $(".drink-section-buttons").hide();
             }
             
             if(this.value === "Specialty Drinks"){
+              title.innerHTML = this.value;
               $('[name="Specialty Drinks"]').show();
               $(".drink-section-buttons").hide();
               
