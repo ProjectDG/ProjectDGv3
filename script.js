@@ -83,7 +83,6 @@ fetch('data.json')
             }
             
             if(this.value === "Specialty Drinks"){
-              title.innerHTML = this.value;
               $('[name="Specialty Drinks"]').show();
               $(".drink-section-buttons").hide();
               
@@ -132,6 +131,9 @@ fetch('data.json')
               let garnishLabel = document.createElement("li");
               garnishLabel.setAttribute("class", "labels");
 
+              let garnishLabel2 = document.createElement("li");
+              garnishLabel2.setAttribute("class", "labels");
+
               // Recipes 
               //----------------------------------------------------------------||
               let glass = document.createElement("li");
@@ -142,6 +144,7 @@ fetch('data.json')
               let mixers = document.createElement("li");
               let mixers2 = document.createElement("li");
               let garnish = document.createElement("li");
+              let garnish2 = document.createElement("li");
 
               // assigns recipes to labels
               //----------------------------------------------------------------||
@@ -159,7 +162,8 @@ fetch('data.json')
               mixers.innerHTML = x.mixers[0];
               mixers2.innerHTML = x.mixers[1];
               garnishLabel.innerHTML = "Garnish: ";
-              garnish.innerHTML = x.garnish;
+              garnish.innerHTML = x.garnish[0];
+              garnish2.innerHTML = x.garnish[1];
               image.setAttribute("src", x.photo);
 
 
@@ -198,6 +202,12 @@ fetch('data.json')
               };
               recipeLabels.append(garnishLabel);
               recipeText.append(garnish);
+              if(x.garnish[1] !== undefined){
+                garnishLabel2.setAttribute("class", "additionalIngredientsBlank")
+                recipeLabels.append(garnishLabel2)
+                garnish2.setAttribute("class", "additionalIngredients")
+                recipeText.append(garnish2);
+              };
             }
 
 

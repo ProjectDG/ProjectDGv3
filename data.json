@@ -12,7 +12,7 @@
     "liqueur": null,
     "mixers": 
     [
-      "Real Black Cherry Syrup - 1 oz",
+      "Black Cherry Puree - 1 oz,",
       "Rocco's Lime Mix - 2 oz"
     ],
     "garnish": ["Dehydrated Lime Wheel"],
@@ -71,16 +71,68 @@
   "photo": "./images/roccoRita.png",
   "type": "Margarita",
   "class": "Recipe Button"
-},
+  },
   {
-    "name": "Tanteo Jalapeno",
+  "name": "Skinny Senorita",
+  "glass": "Coupe Glass ( No Ice ) / Rocks Glass",
+  "rim": "Guest Choice",
+  "liquor": ["Herradura Silver - 2 oz"],
+  "liqueur": null,
+  "mixers": ["Rocco's Lime Mix - 2 oz"],
+  "garnish": ["Lime Wedge"],
+  "photo": "./images/skinnySenorita.png",
+  "type": "Margarita",
+  "class": "Recipe Button"
+  },
+  {
+    "name": "Spicy Jalapeno",
     "glass": "Margarita Glass",
     "rim": "Tajin Chile Lime Salt",
     "liquor": ["Tanteo Jalapeno - 2 oz"],
     "liqueur": ["Triple Sec - 1 oz"],
     "mixers": ["Sour Mix - 2 oz"],
-    "garnish": ["Lime Wedge"],
+    "garnish": ["Lime Wedge & Jalapeno Slice"],
     "photo": "./images/jalapeno.png",
+    "type": "Margarita",
+    "class": "Recipe Button"
+  },
+  {
+    "name": "Spicy Mango",
+    "glass": "Highball Glass",
+    "rim": "Tajin Chile Lime Salt",
+    "liquor": ["Ghost Tequila - 2 oz"],
+    "liqueur": null,
+    "mixers": 
+    [
+      "Sour Mix - 1 oz,",
+      "Mango Puree - 1 oz"
+    ],
+    "garnish": 
+    [
+      "Dehydrated Lime Wheel,",
+      "Dehydrated Chile de Arbol"
+    ],
+    "photo": "./images/spicyMango.png",
+    "type": "Margarita",
+    "class": "Recipe Button"
+  },
+  {
+    "name": "Strawberry Basil",
+    "glass": "Margarita Glass",
+    "rim": "Guest Choice",
+    "liquor": ["Fletcha Azul Blanco - 2 oz"],
+    "liqueur": ["Triple Sec - 1 oz"],
+    "mixers": 
+    [
+      "Agave - .5 oz,",
+      "Rocco Lime Mix - 2 oz"
+    ],
+    "garnish": 
+    [
+      "Basil Sprig,",
+      "Strawberry"
+    ],
+    "photo": "./images/strawberryBasil.png",
     "type": "Margarita",
     "class": "Recipe Button"
   },
@@ -100,6 +152,28 @@
     "type": "Margarita",
     "class": "Recipe Button"
   },
+  {
+    "name": "Watermelon Kiss",
+    "glass": "Margarita Glass",
+    "rim": "Guest Choice",
+    "liquor": ["El Jimador Blanco - 2 oz"],
+    "liqueur": ["Triple Sec - 1 oz"],
+    "mixers": 
+    [
+      "Rocco Lime Mix - 2 oz,",
+      "Watermelon Syrup - 1 oz"
+    ],
+    "garnish": 
+    ["Watermelon Slice"],
+    "photo": "./images/watermelonKiss.png",
+    "type": "Margarita",
+    "class": "Recipe Button"
+  },
+  
+
+
+
+
 
 
 
