@@ -174,10 +174,16 @@ fetch('data.json')
               //   $(".labels").css("margin", "20vh")
               // }
               photoDiv.append(image);
+
+              
               recipeLabels.append(glassLabel);
               recipeText.append(glass);
-              recipeLabels.append(rimLabel);
+
+              if(x.liqueur !== null){
+                recipeLabels.append(rimLabel);
               recipeText.append(rim);
+              };
+              
               recipeLabels.append(liquorLabel);
               recipeText.append(liquor);
               if(x.liquor[1] !== undefined){
@@ -186,6 +192,8 @@ fetch('data.json')
                   liquor2.setAttribute("class", "additionalIngredients")
                   recipeText.append(liquor2);
               };
+
+
               if(x.liqueur !== null){
                   recipeLabels.append(liqueurLabel);
                   recipeText.append(liqueur)
@@ -200,6 +208,8 @@ fetch('data.json')
                 mixers2.setAttribute("class", "additionalIngredients")
                 recipeText.append(mixers2);
               };
+
+
               recipeLabels.append(garnishLabel);
               recipeText.append(garnish);
               if(x.garnish[1] !== undefined){

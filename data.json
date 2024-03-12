@@ -182,6 +182,33 @@
     "type": "menuDrinks",
     "class": "Navigation Button"
   },
+  {
+    "name": "Casamigos Lemonade",
+    "glass": "Pint Glass",
+    "rim": null,
+    "liquor": ["Casamigos Blanco - 2 oz"],
+    "liqueur": null,
+    "mixers": 
+    [
+      "Agave - 1 oz,",
+      "Club Soda (Topped)"
+    ],
+    "garnish": ["Lemon Wedge"],
+    "photo": "./images/casamigosLemonade.png",
+    "type": "Specialty Drinks",
+    "class": "Recipe Button"
+  },
+
+
+
+
+
+
+
+
+
+
+
   
 
 
