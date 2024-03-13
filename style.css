@@ -1,138 +1,164 @@
-body{
-    background-image: url("./images/newWoodBackground2.jpg");
-    background-size: 105% 120%;
-    display: block;
-    height: 97vh;
-}
+@media only screen and (orientation: portrait) and (max-width: 400px) {
+    body{
+        background-image: url("./images/newWoodBackground2.jpg");
+        background-size: 105% 120%;
+        display: block;
+        height: 97vh;
+    }
+    
+    /* Header Div -----------------------------------------------------------------*/
+    #header{
+        font-size: 1.5vh;
+        color: antiquewhite;
+        text-align: center;
+        border: 2px inset rgb(122, 113, 113);
+        background-color: rgba(0, 0, 0, 0.7);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
+        padding: 2%;
+        margin: 4% 0 3% 0;
+    }
+    
+    h1{
+        margin: 0%;
+    }
+    
+    
+    /* Photo Div -----------------------------------------------------------------*/
+    #photoDiv{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 70%;
+        padding: 3%;
+        overflow: hidden;
+    }
+    
+    img{
+        border: 2px outset rgb(122, 113, 113);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
+        max-width: 40%;
+        z-index: 2;
+    }
+    
+    
+    /* Recipe Div -----------------------------------------------------------------*/
+    #recipeDiv{
+        display: none;
+        border: 2px inset rgb(122, 113, 113);
+        background-color: rgba(0, 0, 0, 0.6);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
+        border-radius: 5%;
+        max-width: fit-content;
+        max-height: 50vh;
+        padding: 2% 6% 0% 4%;
+        margin: auto;
+        color: antiquewhite;
+        overflow: scroll;
+    }
+    
+    li{
+        font-size: 1.75vh;
+        list-style: none;
+        height: 2.1vh;
+        align-items: center;
+        margin-bottom: 1.5vh;
+    }
+    
+    #recipeLabels{
+        padding: 0 4vw 0 0;
+        width: fit-content;
+        font-weight: bold;
+    }
+    
+    #recipeText{
+        width: fit-content;
+        padding-left: 0%;
+    }
+    
+    .additionalIngredientsBlank{
+        list-style: none;
+        padding-right: 4vw;
+    }
+    
+    .additionalIngredients{
+        list-style: none;
+    }
+    
+    
+    /* Button Div -----------------------------------------------------------------*/
+    #btnDiv{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .all-buttons{
+        display: none;
+        margin: .5vh;
+        height: 11.5vh;
+        width: 40vw;
+        padding: 0% 8%;
+        font-size: 2vh;
+        border-radius: 8%;
+        border: 1px inset rgb(14, 14, 14);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
+        color: antiquewhite;
+        background-color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    
+    .drink-section-buttons{
+        height: 14vh;
+        width: 40vw;
+        padding: 0% 10%;
+    }
+    
 
-/* Header Div -----------------------------------------------------------------*/
-#header{
-    font-size: 1.5vh;
-    color: antiquewhite;
-    text-align: center;
-    border: 2px inset rgb(122, 113, 113);
-    background-color: rgba(0, 0, 0, 0.7);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
-    padding: 2%;
-    margin: 4% 0 3% 0;
-}
-
-h1{
-    margin: 0%;
-}
-
-
-/* Photo Div -----------------------------------------------------------------*/
-#photoDiv{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 70%;
-    padding: 3%;
-    overflow: hidden;
-}
-
-img{
-    border: 2px outset rgb(122, 113, 113);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
-    max-width: 40%;
-    z-index: 2;
-}
+    
+    /* Back Button Div -----------------------------------------------------------------*/
+    #backButtonDiv{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+        width: 90%;
+        margin: 2% auto;
+    }
+    
+    #backButton{
+        display: none;
+        border-radius: 2%;
+        width: 90%;
+        height: 6vh;
+        font-size: 2.5vh;
+    }
+  }
 
 
-/* Recipe Div -----------------------------------------------------------------*/
-#recipeDiv{
-    display: none;
-    border: 2px inset rgb(122, 113, 113);
-    background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
-    border-radius: 5%;
-    max-width: fit-content;
-    max-height: 50vh;
-    padding: 2% 6% 0% 4%;
-    margin: auto;
-    color: antiquewhite;
-    overflow: scroll;
-}
 
-li{
-    font-size: 1.75vh;
-    list-style: none;
-    height: 2.1vh;
-    align-items: center;
-    margin-bottom: 1.5vh;
-}
-
-#recipeLabels{
-    padding: 0 4vw 0 0;
-    width: fit-content;
-    font-weight: bold;
-}
-
-#recipeText{
-    width: fit-content;
-    padding-left: 0%;
-}
-
-.additionalIngredientsBlank{
-    list-style: none;
-    padding-right: 4vw;
-}
-
-.additionalIngredients{
-    list-style: none;
-}
+  @media only screen and (orientation: landscape) and (max-width: 850px) {
+    body{
+        background-image: url("./images/newWoodBackground2.jpg");
+        background-size: 105% 120%;
+        display: block;
+        height: 97vh;
+    }
+    
+    #mainContainer {
+        display: none;
+    }
+  }
 
 
-/* Button Div -----------------------------------------------------------------*/
-#btnDiv{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 95%;
-    margin: 0 auto;
-}
 
-.all-buttons{
-    display: none;
-    margin: .5vh;
-    height: 11.5vh;
-    width: 40vw;
-    padding: 0% 8%;
-    font-size: 2vh;
-    border-radius: 8%;
-    border: 1px inset rgb(14, 14, 14);
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.5);
-    color: antiquewhite;
-    background-color: rgb(0, 0, 0);
-    cursor: pointer;
-}
 
-.drink-section-buttons{
-    height: 14vh;
-    width: 40vw;
-    padding: 0% 10%;
-}
 
-/* Back Button Div -----------------------------------------------------------------*/
-#backButtonDiv{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
-    left: 5%;
-    width: 90%;
-    margin: 2% auto;
-}
 
-#backButton{
-    display: none;
-    border-radius: 2%;
-    width: 90%;
-    height: 6vh;
-    font-size: 2.5vh;
-}
+
