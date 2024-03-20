@@ -83,6 +83,7 @@ fetch('data.json')
             }
             
             if(this.value === "Specialty Drinks"){
+              title.innerHTML = this.value;
               $('[name="Specialty Drinks"]').show();
               $(".drink-section-buttons").hide();
               
@@ -179,7 +180,7 @@ fetch('data.json')
               recipeLabels.append(glassLabel);
               recipeText.append(glass);
 
-              if(x.liqueur !== null){
+              if(x.rim !== null){
                 recipeLabels.append(rimLabel);
               recipeText.append(rim);
               };
@@ -231,19 +232,7 @@ fetch('data.json')
         })
     });
 
-    // back button click function
-    //-------------------------------------------------------------------------------------------------------------------||
-    $("#backButton").click(function(){
-      $(".all-buttons").hide();
-      $("#backButton").hide();
-      $("#photoDiv").hide();
-      $("#recipeText").empty();
-      $("#recipeLabels").empty();
-      $("#recipeDiv").css("display", "none");
-      $("#btnDiv").show();
-      $(".drink-section-buttons").show();
-      title.innerText = "Rocco's Drink Recipes"
-    });
+    
 
 
 
@@ -256,6 +245,24 @@ fetch('data.json')
     console.error('There was a problem fetching the data:', error);
   });
 
+
+  
+
+
+  // back button click function
+    //-------------------------------------------------------------------------------------------------------------------||
+    $("#backButton").click(function(){
+      console.log("---- Back Button : Clicked ----")
+      $(".all-buttons").hide();
+      $("#backButton").hide();
+      $("#photoDiv").hide();
+      $("#recipeText").empty();
+      $("#recipeLabels").empty();
+      $("#recipeDiv").css("display", "none");
+      $("#btnDiv").show();
+      $(".drink-section-buttons").show();
+      title.innerText = "Rocco's Drink Recipes"
+    });
 
 
 
