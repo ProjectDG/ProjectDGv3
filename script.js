@@ -6,9 +6,6 @@
 
 $(document).ready(function(){
 
-    
-
-
 fetch('data.json')
   .then(response => {
     if (!response.ok) {
@@ -52,29 +49,19 @@ fetch('data.json')
     })
 
 
-    
-
-
-    // Initialization
-    //-------------------------------------------------------------------------------------------------------------------||
-    $('[name="menuDrinks"]').show();
-    
-
-
-
-
     // button click function
     //-------------------------------------------------------------------------------------------------------------------||
     $(".all-buttons").click(function(){
         $("#photoDiv").empty();
-        
+        $("#backButton").show();
         
         data.map(x => {
           
           if(x.class === "Navigation Button"){
             $(".drinkSectionButtons").hide();
             $("#btnDiv").show();
-            $("#backButton").show();
+          
+
             
             if(this.value === "Margaritas"){
               title.innerHTML = this.value;
@@ -94,7 +81,6 @@ fetch('data.json')
           if(x.class === "Recipe Button"){
             $("#btnDiv").hide();
             $(".drink-recipe-buttons").hide();
-            $("#backButton").hide();
 
 
 
@@ -244,25 +230,22 @@ fetch('data.json')
   .catch(error => {
     console.error('There was a problem fetching the data:', error);
   });
-
-
   
 
 
   // back button click function
-    //-------------------------------------------------------------------------------------------------------------------||
-    $("#backButton").click(function(){
-      console.log("---- Back Button : Clicked ----")
-      $(".all-buttons").hide();
-      $("#backButton").hide();
-      $("#photoDiv").hide();
-      $("#recipeText").empty();
-      $("#recipeLabels").empty();
-      $("#recipeDiv").css("display", "none");
-      $("#btnDiv").show();
-      $(".drink-section-buttons").show();
-      title.innerText = "Rocco's Drink Recipes"
-    });
+  //-------------------------------------------------------------------------------------------------------------------||
+  $("#backButton").click(function(){
+    console.log("---- Back Button : Clicked ----")
+    $(".all-buttons").hide();
+    $("#photoDiv").hide();
+    $("#recipeText").empty();
+    $("#recipeLabels").empty();
+    $("#recipeDiv").css("display", "none");
+    $("#btnDiv").show();
+    $(".drink-section-buttons").show();
+    title.innerText = "Rocco's Drink Recipes"
+  });
 
 
 

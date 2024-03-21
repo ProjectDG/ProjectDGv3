@@ -112,11 +112,12 @@
     }
     
     .drink-section-buttons{
+        display: block;
         height: 14vh;
         width: 40vw;
         padding: 0% 10%;
     }
-    
+
 
     
     /* Back Button Div -----------------------------------------------------------------*/
